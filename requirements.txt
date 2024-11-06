@@ -1,4 +1,4 @@
 streamlit
-webbrowser
-pandas 
+pandas
+matplotlib
 numpy
