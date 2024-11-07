@@ -3,7 +3,7 @@ st.markdown(
     """
     <style>
     .header {
-        display: flex;
+        display: inline-block;
         justify-content: flex-start;
         align-items: left;
         height: 60px;
