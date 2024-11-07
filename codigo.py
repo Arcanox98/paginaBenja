@@ -38,7 +38,7 @@ st.markdown(
     }
     </style>
     <div class="top-left">
-        <img src="Imagenestrabajo/mc-nifica.png" width="150">
+        <img src="Imagenestrabajo/732217.png" width="150">
     </div>
     """, unsafe_allow_html=True
 )
