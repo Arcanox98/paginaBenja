@@ -1,15 +1,16 @@
 import streamlit as st
-st.title("")
+st.title("Ingreso de Productos")
 st.subheader("Sube una imagen y escribe una breve descripción para cada producto")
 
-# Configuración del layout centrado
-col1, col2, col3 = st.columns([1, 2, 1])
-
-with col2:
-    for i in range(1, 7):
-        st.markdown(f"### Producto {i}")
-        image = st.file_uploader(f"Sube la imagen del producto {i}", type=["jpg", "jpeg", "png"], key=f"image_{i}")
-        description = st.text_input(f"Escribe una descripción para el producto {i}", key=f"description_{i}")
-        st.markdown("---")  # Separador entre productos
+# Crear un contenedor para alinear los productos en una cuadrícula de 3 columnas por fila
+for row in range(2):  # Dos filas
+    cols = st.columns(3)  # Tres columnas por fila
+    for i, col in enumerate(cols):
+        with col:
+            product_num = row * 3 + i + 1
+            st.markdown(f"### Producto {product_num}")
+            image = st.file_uploader(f"Sube la imagen del producto {product_num}", type=["jpg", "jpeg", "png"], key=f"image_{product_num}")
+            description = st.text_input(f"Descripción para el producto {product_num}", key=f"description_{product_num}")
+            st.markdown("---")  # Separador entre productos (opcional)
 
 st.write("Gracias por ingresar los productos!")
