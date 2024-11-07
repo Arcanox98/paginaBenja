@@ -1,4 +1,8 @@
 import streamlit as st
+st.markdown(
+    "<style>body {background-color: #f5f5dc;}</style>", 
+    unsafe_allow_html=True
+)
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
     "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
