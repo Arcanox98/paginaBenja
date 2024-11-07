@@ -18,7 +18,7 @@ st.markdown(
 )
 
 # Logo de la imagen
-st.image('ruta/a/tu/logo.png', width=150)
+st.image('Imagenestrabajo/732217.png', width=150)
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
     "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
