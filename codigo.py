@@ -1,16 +1,15 @@
 import streamlit as st
 st.title("")
-st.markdown("<h1 style='text-align: center;'>Lista de Productos</h1>", unsafe_allow_html=True)
+st.subheader("Sube una imagen y escribe una breve descripción para cada producto")
 
-# Contenedor para los productos con checkboxes grandes
-st.markdown("<h3 style='text-align: center;'>Selecciona los productos deseados:</h3>", unsafe_allow_html=True)
+# Configuración del layout centrado
+col1, col2, col3 = st.columns([1, 2, 1])
 
-# Lista de productos
-productos = [
-    "Producto 1 - Camisa",
-    "Producto 2 - Pantalón",
-    "Producto 3 - Zapatos",
-    "Producto 4 - Sombrero",
-    "Producto 5 - Bufanda",
-    "Producto 6 - Abrigo"
-]
+with col2:
+    for i in range(1, 7):
+        st.markdown(f"### Producto {i}")
+        image = st.file_uploader(f"Sube la imagen del producto {i}", type=["jpg", "jpeg", "png"], key=f"image_{i}")
+        description = st.text_input(f"Escribe una descripción para el producto {i}", key=f"description_{i}")
+        st.markdown("---")  # Separador entre productos
+
+st.write("Gracias por ingresar los productos!")
