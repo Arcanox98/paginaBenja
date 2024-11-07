@@ -1,5 +1,24 @@
 import streamlit as st
+st.markdown(
+    """
+    <style>
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        padding: 10px;
+    }
+    .header img {
+        height: 40px;  /* Ajusta el tamaño del logo */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
+# Logo de la imagen
+st.markdown('<div class="header"><img src="https://ruta/a/tu/logo.png" alt="Logo"></div>', unsafe_allow_html=True)
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
     "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
@@ -27,21 +46,7 @@ urls = [
     "https://www.mcdonalds.cl/menu/hamburguesas-linea-signature/smoke-house-2-carnes"
 ]
 
-# Colocar una imagen en la parte superior izquierda
-st.markdown(
-    """
-    <style>
-    .top-left {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-    }
-    </style>
-    <div class="top-left">
-        <img src="Imagenestrabajo/732217.png" width="150">
-    </div>
-    """, unsafe_allow_html=True
-)
+
 
 st.title("Macdonaldo")
 st.subheader("Visualización de Hamburguesas")
