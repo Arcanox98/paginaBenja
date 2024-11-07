@@ -1,7 +1,7 @@
 import streamlit as st
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
-    "Imagenestrabajo/png-transparent-mcdonald-s-big-mac-fast-food-hamburger-eating-big-mac-food-cheeseburger-american-food-thumbnail.png",
+    "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
     "Imagenestrabajo/png-transparent-cheeseburger-mcdonald-s-big-mac-hamburger-whopper-patty-bacon-smokehouse-mcdonalds.png",
     "Imagenestrabajo/png-clipart-mcdonald-s-quarter-pounder-hamburger-fast-food-kfc-junk-food-burger-and-sandwich-food-cheese-thumbnail.png",
     "Imagenestrabajo/mc-nifica.png",
