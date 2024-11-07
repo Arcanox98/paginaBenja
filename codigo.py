@@ -38,7 +38,7 @@ for row in range(2):  # Dos filas
             st.write(descripciones[product_index])
             
             # Botón para ordenar
-            if st.button(f"Ordenar {product_index + 1}", key=product_index):
+            if st.button(f"Ordenar"):
                 # Redirigir a la URL del producto correspondiente
                 st.markdown(f"[Ordenar aquí]( {urls[product_index]} )")
 
