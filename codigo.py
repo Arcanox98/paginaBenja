@@ -18,7 +18,7 @@ st.markdown(
 )
 
 # Logo de la imagen
-st.markdown('<div class="header"><img src="data:image/png;base64,{}" alt="Logo"></div>', unsafe_allow_html=True)
+st.markdown('<div class="header"><img src="data:Imagenestrabajo/732217.png;base64,{}" alt="Logo"></div>', unsafe_allow_html=True)
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
     "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
