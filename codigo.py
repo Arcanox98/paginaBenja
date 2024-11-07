@@ -9,7 +9,7 @@ for row in range(2):  # Dos filas
         with col:
             product_num = row * 3 + i + 1
             st.markdown(f"### Producto {product_num}")
-            image = st.file_uploader(f"Sube la imagen del producto {product_num}", type=["jpg", "jpeg", "png"], key=f"image_{product_num}")
+            image = st.imagen(f"Sube la imagen del producto {product_num}", type=["jpg", "jpeg", "png"], key=f"image_{product_num}")
             description = st.text_input(f"Descripción para el producto {product_num}", key=f"description_{product_num}")
             st.markdown("---")  # Separador entre productos (opcional)
 
