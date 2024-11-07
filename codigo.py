@@ -14,7 +14,7 @@ descripciones = [
     "Descripción del producto 3",
     "Descripción del producto 4",
     "Descripción del producto 5",
-    "Descripción del producto 6"
+    "Dos carne de res, dos rebanadas de queso, bacon crujiente, pan de hamburguesa y, a veces, acompañamientos como lechuga, tomate, cebolla y salsas"
 ]
 
 st.title("Productos")
