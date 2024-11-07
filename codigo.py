@@ -36,5 +36,10 @@ for row in range(2):  # Dos filas
         with col:
             st.image(imagenes[product_index], caption=f"Producto {product_index + 1}", use_column_width=True)
             st.write(descripciones[product_index])
+            
+            # Botón para ordenar
+            if st.button(f"Ordenar {product_index + 1}", key=product_index):
+                # Redirigir a la URL del producto correspondiente
+                st.markdown(f"[Ordenar aquí]( {urls[product_index]} )")
 
 st.write("Estos son todos los productos.")
