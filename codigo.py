@@ -13,12 +13,20 @@ descripciones = [
     "Big Mac: Dos hamburguesas de res, queso, lechuga, cebolla, pepinillos, salsa especial y pan con tres partes.",
     "Quarter Pounder: Carne de res (cuarto de libra), queso, cebolla, ketchup, mostaza y pan de hamburguesa.",
     "Quarter Pounder Western: Carne de res (cuarto de libra), queso, bacon, cebolla caramelizada, salsa barbacoa y pan de hamburguesa",
-    "Macnífica: Carne de res, queso, bacon, cebolla caramelizada, lechuga, tomate, salsa especial y pan de hamburguesa.",
+    "Mcnífica: Carne de res, queso, bacon, cebolla caramelizada, lechuga, tomate, salsa especial y pan de hamburguesa.",
     "Mega Doble Queso Bacon: Dos carnes de res, dos rebanadas de queso, bacon crujiente, pan de hamburguesa y salsas."
 ]
+urls = [
+    "https://www.mcdonalds.com/us/es-us/product/mcplant.html",
+    "https://www.mcdonalds.cl/menu/hamburguesas/big-mac",
+    "https://www.mcdonalds.com/us/es-us/product/quarter-pounder-with-cheese.html",
+    "https://www.mcdonalds.com.pr/productos/hamburgers/quarter-pounder-western-bbq",
+    "https://www.mcdonalds.cl/menu/hamburguesas/mcnifica",
+    "https://www.mcdonalds.cl/menu/hamburguesas-linea-signature/smoke-house-2-carnes"
+]
 
-st.title("Productos")
-st.subheader("Visualización de imágenes y descripciones de productos")
+st.title("Macdonaldo")
+st.subheader("Visualización de Hamburguesas")
 
 # Crear un contenedor para mostrar los productos en una cuadrícula de 3 columnas por fila
 for row in range(2):  # Dos filas
