@@ -5,7 +5,7 @@ st.markdown(
     .header {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: left;
         height: 60px;
         padding: 10px;
     }
