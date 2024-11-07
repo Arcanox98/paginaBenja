@@ -10,7 +10,7 @@ st.markdown(
         padding: 10px;
     }
     .header img {
-        height: 40px;  /* Ajusta el tamaño del logo */
+        height: 100px;  /* Ajusta el tamaño del logo */
     }
     </style>
     """,
@@ -49,7 +49,6 @@ urls = [
 
 
 st.title("Macdonaldo")
-st.subheader("Visualización de Hamburguesas")
 
 # Crear un contenedor para mostrar los productos en una cuadrícula de 3 columnas por fila
 for row in range(2):  # Dos filas
