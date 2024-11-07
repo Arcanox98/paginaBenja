@@ -42,4 +42,4 @@ for row in range(2):  # Dos filas
                 # Redirigir a la URL del producto correspondiente
                 st.markdown(f"[Ordenar aquí]( {urls[product_index]} )")
 
-st.write("Estos son todos los productos.")
+
