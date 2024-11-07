@@ -1,16 +1,32 @@
 import streamlit as st
-st.title("Ingreso de Productos")
-st.subheader("Sube una imagen y escribe una breve descripción para cada producto")
+imagenes = [
+    "ruta_imagen_1.jpg",
+    "ruta_imagen_2.jpg",
+    "ruta_imagen_3.jpg",
+    "ruta_imagen_4.jpg",
+    "ruta_imagen_5.jpg",
+    "ruta_imagen_6.jpg"
+]
 
-# Crear un contenedor para alinear los productos en una cuadrícula de 3 columnas por fila
+descripciones = [
+    "Descripción del producto 1",
+    "Descripción del producto 2",
+    "Descripción del producto 3",
+    "Descripción del producto 4",
+    "Descripción del producto 5",
+    "Descripción del producto 6"
+]
+
+st.title("Productos")
+st.subheader("Visualización de imágenes y descripciones de productos")
+
+# Crear un contenedor para mostrar los productos en una cuadrícula de 3 columnas por fila
 for row in range(2):  # Dos filas
     cols = st.columns(3)  # Tres columnas por fila
     for i, col in enumerate(cols):
+        product_index = row * 3 + i  # Índice para cada producto
         with col:
-            product_num = row * 3 + i + 1
-            st.markdown(f"### Producto {product_num}")
-            image = st.imagen(f"Sube la imagen del producto {product_num}", type=["jpg", "jpeg", "png"], key=f"image_{product_num}")
-            description = st.text_input(f"Descripción para el producto {product_num}", key=f"description_{product_num}")
-            st.markdown("---")  # Separador entre productos (opcional)
+            st.image(imagenes[product_index], caption=f"Producto {product_index + 1}", use_column_width=True)
+            st.write(descripciones[product_index])
 
-st.write("Gracias por ingresar los productos!")
+st.write("Estos son todos los productos.")
