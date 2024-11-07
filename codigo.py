@@ -1,8 +1,5 @@
 import streamlit as st
-st.markdown(
-    "<style>body {background-color: #f5f5dc;}</style>", 
-    unsafe_allow_html=True
-)
+
 imagenes = [
     "Imagenestrabajo/produtos_500x500_bestburgers_big-tastysingle.png",
     "Imagenestrabajo/NR_202302_0005-999_BigMac_2000x2000.png",
@@ -20,6 +17,7 @@ descripciones = [
     "Mcnífica: Carne de res, queso, bacon, cebolla caramelizada, lechuga, tomate, salsa especial y pan de hamburguesa.",
     "Mega Doble Queso Bacon: Dos carnes de res, dos rebanadas de queso, bacon crujiente, pan de hamburguesa y salsas."
 ]
+
 urls = [
     "https://www.mcdonalds.com/us/es-us/product/mcplant.html",
     "https://www.mcdonalds.cl/menu/hamburguesas/big-mac",
@@ -28,6 +26,22 @@ urls = [
     "https://www.mcdonalds.cl/menu/hamburguesas/mcnifica",
     "https://www.mcdonalds.cl/menu/hamburguesas-linea-signature/smoke-house-2-carnes"
 ]
+
+# Colocar una imagen en la parte superior izquierda
+st.markdown(
+    """
+    <style>
+    .top-left {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    </style>
+    <div class="top-left">
+        <img src="Imagenestrabajo/mc-nifica.png" width="150">
+    </div>
+    """, unsafe_allow_html=True
+)
 
 st.title("Macdonaldo")
 st.subheader("Visualización de Hamburguesas")
@@ -45,5 +59,4 @@ for row in range(2):  # Dos filas
             if st.button(f"Ordenar", key=product_index):
                 # Redirigir a la URL del producto correspondiente
                 st.markdown(f"[Ordenar aquí]( {urls[product_index]} )")
-
 
