@@ -51,12 +51,14 @@ for row in range(2):  # Dos filas
     cols = st.columns(3)  # Tres columnas por fila
     for i, col in enumerate(cols):
         product_index = row * 3 + i  # Índice para cada producto
-        with col:
-            st.image(imagenes[product_index], caption=f"Producto {product_index + 1}", use_column_width=True)
-            st.write(descripciones[product_index])
-            
-            # Botón para ordenar
-            if st.button(f"Ordenar", key=product_index):
-                # Redirigir a la URL del producto correspondiente
-                st.markdown(f"[Ordenar aquí]( {urls[product_index]} )")
-
+        
+        # Asegúrate de que no se exceda el índice de la lista
+        if product_index < len(imagenes):
+            with col:
+                st.image(imagenes[product_index], caption=f"Producto {product_index + 1}", use_column_width=True)
+                st.write(descripciones[product_index])
+                
+                # Botón para ordenar
+                if st.button(f"Ordenar", key=f"btn_{product_index}"):
+                    # Redirigir a la URL del producto correspondiente
+                    st.markdown(f"[Ordenar aquí]({urls[product_index]})", unsafe_allow_html=True)
