@@ -9,12 +9,12 @@ imagenes = [
 ]
 
 descripciones = [
-    "Descripción del producto 1",
-    "Descripción del producto 2",
-    "Descripción del producto 3",
-    "Descripción del producto 4",
-    "Descripción del producto 5",
-    "Dos carne de res, dos rebanadas de queso, bacon crujiente, pan de hamburguesa y, a veces, acompañamientos como lechuga, tomate, cebolla y salsas"
+    "McPlant: Carne vegetal, lechuga, tomate, cebolla, pepinillos, ketchup, mayonesa y pan de hamburguesa.",
+    "Big Mac: Dos hamburguesas de res, queso, lechuga, cebolla, pepinillos, salsa especial y pan con tres partes.",
+    "Quarter Pounder: Carne de res (cuarto de libra), queso, cebolla, ketchup, mostaza y pan de hamburguesa.",
+    "Quarter Pounder Western: Carne de res (cuarto de libra), queso, bacon, cebolla caramelizada, salsa barbacoa y pan de hamburguesa",
+    "Macnífica: Carne de res, queso, bacon, cebolla caramelizada, lechuga, tomate, salsa especial y pan de hamburguesa.",
+    "Mega Doble Queso Bacon: Dos carnes de res, dos rebanadas de queso, bacon crujiente, pan de hamburguesa y salsas."
 ]
 
 st.title("Productos")
