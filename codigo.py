@@ -5,7 +5,7 @@ imagenes = [
     "Imagenestrabajo/987c799e3186217aa0a8e6f996a452a0.png",
     "Imagenestrabajo/DLV_1631_SEP_V2.png",
     "Imagenestrabajo/mc-nifica.png",
-    "Imagenestrabajo/DC_202302_0005-999_BigMac_1564x1564-1_product-header-mobile.jpg"
+    "Imagenestrabajo/hamburguesa-doble-queso-bacon-1024x683.png"
 ]
 
 descripciones = [
